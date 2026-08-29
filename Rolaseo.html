@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rol de Limpieza - Iglesia Ministerio de Amor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary: #2C3E50;
+            --secondary: #3498DB;
+            --bg: #F4F7F6;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #7F8C8D;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        .header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px auto;
+            padding: 0 20px;
+        }
+        .month-section {
+            margin-bottom: 40px;
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .month-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            border-bottom: 2px solid #ECF0F1;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #FAFAFA;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--primary);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .date {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .date svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--secondary);
+        }
+        .team-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .team-list li {
+            padding: 6px 0;
+            font-size: 1rem;
+            border-bottom: 1px dashed #E0E0E0;
+            display: flex;
+            align-items: center;
+        }
+        .team-list li:last-child {
+            border-bottom: none;
+        }
+        .team-list li::before {
+            content: "✨";
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+        .team-badge {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .group-1 { border-top-color: #E74C3C; }
+        .group-1 .team-badge { background-color: #E74C3C; }
+        .group-1 .date svg { fill: #E74C3C; }
+        
+        .group-2 { border-top-color: #27AE60; }
+        .group-2 .team-badge { background-color: #27AE60; }
+        .group-2 .date svg { fill: #27AE60; }
+        
+        .group-3 { border-top-color: #F39C12; }
+        .group-3 .team-badge { background-color: #F39C12; }
+        .group-3 .date svg { fill: #F39C12; }
+        
+        .group-4 { border-top-color: #9B59B6; }
+        .group-4 .team-badge { background-color: #9B59B6; }
+        .group-4 .date svg { fill: #9B59B6; }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Iglesia Ministerio de Amor</h1>
+        <p>Rol de Limpieza 2026</p>
+    </div>
+    <div class="container">
+
+        <div class="month-section">
+            <h2 class="month-title">Agosto</h2>
+            <div class="grid">
+        
+                <div class="card group-1">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 29
+                    </div>
+                    <span class="team-badge">Equipo Miguel</span>
+                    <ul class="team-list">
+                        <li>Alan</li><li>Jireh</li><li>Miguel</li><li>Antony</li><li>Beni</li>
+                    </ul>
+                </div>
+    </div></div>
+        <div class="month-section">
+            <h2 class="month-title">Septiembre</h2>
+            <div class="grid">
+        
+                <div class="card group-2">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 5
+                    </div>
+                    <span class="team-badge">Equipo Josue</span>
+                    <ul class="team-list">
+                        <li>Josue</li><li>Aaron</li><li>Andrés</li><li>Cielo</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-3">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 12
+                    </div>
+                    <span class="team-badge">Equipo Valentina</span>
+                    <ul class="team-list">
+                        <li>Valentina</li><li>Nathalia</li><li>Dulce</li><li>Maribel</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-4">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 19
+                    </div>
+                    <span class="team-badge">Equipo Lidia</span>
+                    <ul class="team-list">
+                        <li>Lidia</li><li>Sugey</li><li>Lesly</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-1">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 26
+                    </div>
+                    <span class="team-badge">Equipo Miguel</span>
+                    <ul class="team-list">
+                        <li>Alan</li><li>Jireh</li><li>Miguel</li><li>Antony</li><li>Beni</li>
+                    </ul>
+                </div>
+    </div></div>
+        <div class="month-section">
+            <h2 class="month-title">Octubre</h2>
+            <div class="grid">
+        
+                <div class="card group-2">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 3
+                    </div>
+                    <span class="team-badge">Equipo Josue</span>
+                    <ul class="team-list">
+                        <li>Josue</li><li>Aaron</li><li>Andrés</li><li>Cielo</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-3">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 10
+                    </div>
+                    <span class="team-badge">Equipo Valentina</span>
+                    <ul class="team-list">
+                        <li>Valentina</li><li>Nathalia</li><li>Dulce</li><li>Maribel</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-4">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 17
+                    </div>
+                    <span class="team-badge">Equipo Lidia</span>
+                    <ul class="team-list">
+                        <li>Lidia</li><li>Sugey</li><li>Lesly</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-1">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 24
+                    </div>
+                    <span class="team-badge">Equipo Miguel</span>
+                    <ul class="team-list">
+                        <li>Alan</li><li>Jireh</li><li>Miguel</li><li>Antony</li><li>Beni</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-2">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 31
+                    </div>
+                    <span class="team-badge">Equipo Josue</span>
+                    <ul class="team-list">
+                        <li>Josue</li><li>Aaron</li><li>Andrés</li><li>Cielo</li>
+                    </ul>
+                </div>
+    </div></div>
+        <div class="month-section">
+            <h2 class="month-title">Noviembre</h2>
+            <div class="grid">
+        
+                <div class="card group-3">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 7
+                    </div>
+                    <span class="team-badge">Equipo Valentina</span>
+                    <ul class="team-list">
+                        <li>Valentina</li><li>Nathalia</li><li>Dulce</li><li>Maribel</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-4">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 14
+                    </div>
+                    <span class="team-badge">Equipo Lidia</span>
+                    <ul class="team-list">
+                        <li>Lidia</li><li>Sugey</li><li>Lesly</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-1">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 21
+                    </div>
+                    <span class="team-badge">Equipo Miguel</span>
+                    <ul class="team-list">
+                        <li>Alan</li><li>Jireh</li><li>Miguel</li><li>Antony</li><li>Beni</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-2">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 28
+                    </div>
+                    <span class="team-badge">Equipo Josue</span>
+                    <ul class="team-list">
+                        <li>Josue</li><li>Aaron</li><li>Andrés</li><li>Cielo</li>
+                    </ul>
+                </div>
+    </div></div>
+        <div class="month-section">
+            <h2 class="month-title">Diciembre</h2>
+            <div class="grid">
+        
+                <div class="card group-3">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 5
+                    </div>
+                    <span class="team-badge">Equipo Valentina</span>
+                    <ul class="team-list">
+                        <li>Valentina</li><li>Nathalia</li><li>Dulce</li><li>Maribel</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-4">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 12
+                    </div>
+                    <span class="team-badge">Equipo Lidia</span>
+                    <ul class="team-list">
+                        <li>Lidia</li><li>Sugey</li><li>Lesly</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-1">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 19
+                    </div>
+                    <span class="team-badge">Equipo Miguel</span>
+                    <ul class="team-list">
+                        <li>Alan</li><li>Jireh</li><li>Miguel</li><li>Antony</li><li>Beni</li>
+                    </ul>
+                </div>
+    
+                <div class="card group-2">
+                    <div class="date">
+                        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                        Sábado 26
+                    </div>
+                    <span class="team-badge">Equipo Josue</span>
+                    <ul class="team-list">
+                        <li>Josue</li><li>Aaron</li><li>Andrés</li><li>Cielo</li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Generado para la Iglesia Ministerio de Amor
+    </div>
+</body>
+</html>
